@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    color: white;
+}
+
+body::before {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/static/background_image.jpeg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.form-container {
+    width: 490px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ffffff80;
+    backdrop-filter: blur(8px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Container for input fields */
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Input field styling */
+.input-field input {
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    outline: none;
+    color: #4f5152;
+}
+
+/* Placeholder to ensure space for the floating label */
+.input-field input::placeholder {
+    opacity: 50%;
+    color: white;
+}
+
+.forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0 35px 0;
+    color: #fff;
+}
+
+.forgot a {
+    accent-color: #fff;
+}
+
+.forgot label {
+    display: flex;
+    align-items: center;
+}
+
+.forgot label p {
+    margin-left: 8px;
+    margin-top: 3px;
+} 
+
+button {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+.register {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+} 
+
+.register a {
+    color: #62058a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+header.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-repeat: repeat;
+}
+
+header .wrapper a {
+  position: relative;
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+header .wrapper a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #f6f0f0;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.5s;                   
+}
+
+header .wrapper a:hover::after {
+    transform: scaleX(1);
+}
+
+main {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem;
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   font-size: 0.8rem;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 0.8rem; /* Smaller font size */
+}
+
+footer .social-icons a img {
+    width: 30px; /* Reduced icon size */
+    margin: 0.5rem;
+}
+
+footer .social-icons a img:hover {
+    transform: scale(2.0);
+}
+
+
+
+  
